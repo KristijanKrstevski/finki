@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 
 @Entity
 public class Accommodation {
@@ -18,6 +20,9 @@ public class Accommodation {
     @ManyToOne(fetch = FetchType.EAGER)
     private Host host;
     private Integer numRooms;
+
+    @OneToMany
+    private List<Available> available;
 
     public Accommodation() {
     }

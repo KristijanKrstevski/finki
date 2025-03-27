@@ -30,10 +30,8 @@ public class AvailableServiceImpl implements AvailableService {
 
     @Override
     public Available create(AvailabaleDTO availabaleDTO) throws Exception {
-        Optional<Accommodation> accommodationOptional = accommodationRepository.findById(availabaleDTO.getAccommodationId());
-
-
-        Accommodation accommodation = accommodationOptional.get();
+        Accommodation accommodation = accommodationRepository.findById(availabaleDTO.getAccommodationId())
+                .orElseThrow(Exception::new);
 
         Available available = new Available();
         available.setDate_from(availabaleDTO.getDate_from());
@@ -46,14 +44,11 @@ public class AvailableServiceImpl implements AvailableService {
 
     @Override
     public Available update(Long id, AvailabaleDTO availabaleDTO) throws Exception {
-        Optional<Available> availableOptional = availableRepository.findById(id);
+        Available available = availableRepository.findById(id)
+                .orElseThrow(Exception::new);
 
-        Available available = availableOptional.get();
-
-
-        Optional<Accommodation> accommodationOptional = accommodationRepository.findById(availabaleDTO.getAccommodationId());
-
-        Accommodation accommodation = accommodationOptional.get();
+        Accommodation accommodation = accommodationRepository.findById(availabaleDTO.getAccommodationId())
+                .orElseThrow(Exception::new);
 
         available.setDate_from(availabaleDTO.getDate_from());
         available.setDate_to(availabaleDTO.getDate_to());

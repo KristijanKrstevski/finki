@@ -23,4 +23,28 @@ public class Country {
     public Country() {
 
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContinent() {
+        return continent;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
 }

@@ -21,8 +21,8 @@ public class Accommodation {
     private Host host;
     private Integer numRooms;
 
-    @OneToMany
-    private List<Available> available;
+//    @OneToMany
+//    private List<Available> available;
 
     public Accommodation() {
     }

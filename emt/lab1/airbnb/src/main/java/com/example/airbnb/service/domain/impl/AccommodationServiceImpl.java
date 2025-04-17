@@ -1,18 +1,18 @@
-package com.example.airbnb.service.impl;
+package com.example.airbnb.service.domain.impl;
 
 
-
+import com.example.airbnb.dto.create.CreateAccommodationDTO;
+import com.example.airbnb.dto.display.DisplayAccommodationDTO;
 import com.example.airbnb.model.domains.Accommodation;
-import com.example.airbnb.model.dto.AccommodationDTO;
+import com.example.airbnb.model.domains.Host;
 import com.example.airbnb.model.exceptions.NoAvailableRoomsException;
 import com.example.airbnb.repository.AccommodationRepository;
 import com.example.airbnb.repository.HostRepository;
-import com.example.airbnb.service.AccommodationService;
-import com.example.airbnb.model.domains.Host;
-
+import com.example.airbnb.service.domain.AccommodationService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AccommodationServiceImpl implements AccommodationService {
@@ -30,27 +30,27 @@ public class AccommodationServiceImpl implements AccommodationService {
     }
 
     @Override
-    public Accommodation create(AccommodationDTO accommodationDTO) throws Exception {
-        Host host = this.hostRepository.findById(accommodationDTO.getHostID()).orElseThrow(Exception::new);
-        Accommodation accommodation=new Accommodation(accommodationDTO.getName(),accommodationDTO.getCategory(),host,accommodationDTO.getNumOfRooms());
-        return this.accommodationRepository.save(accommodation);
+    public Accommodation create(Accommodation accommodation) throws Exception {
+        Host host = this.hostRepository.findById(accommodation.getHost().getId()).orElseThrow(Exception::new);
+        Accommodation accommodation1=new Accommodation(accommodation.getName(),accommodation.getCategory(),host,accommodation.getNumRooms());
+        return this.accommodationRepository.save(accommodation1);
 
     }
 
     @Override
-    public Accommodation update(Long id, AccommodationDTO accommodationDTO) throws Exception {
-        Host host= this.hostRepository.findById(accommodationDTO.getHostID()).orElseThrow(Exception::new);
-        Accommodation accommodation=this.accommodationRepository.findById(id).orElseThrow(Exception::new);
+    public Accommodation update(Long id, Accommodation accommodation) throws Exception {
+        Host host= this.hostRepository.findById(accommodation.getHost().getId()).orElseThrow(Exception::new);
+        Accommodation accommodation1=this.accommodationRepository.findById(id).orElseThrow(Exception::new);
 
-        accommodation.setName(accommodationDTO.getName());
-        accommodation.setCategory(accommodationDTO.getCategory());
+        accommodation.setName(accommodation.getName());
+        accommodation.setCategory(accommodation.getCategory());
         accommodation.setHost(host);
-        accommodation.setNumRooms(accommodationDTO.getNumOfRooms());
-        return accommodationRepository.save(accommodation);
+        accommodation.setNumRooms(accommodation.getNumRooms());
+        return accommodationRepository.save(accommodation1);
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(Long id)  {
         this.accommodationRepository.deleteById(id);
     }
 
@@ -64,6 +64,11 @@ public class AccommodationServiceImpl implements AccommodationService {
 
         accommodation.setNumRooms(accommodation.getNumRooms() - 1);
         return this.accommodationRepository.save(accommodation);
+    }
+
+    @Override
+    public Optional<Accommodation> findById(Long id) {
+        return accommodationRepository.findById(id);
     }
 
 }

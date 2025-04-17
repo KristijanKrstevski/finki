@@ -5,6 +5,7 @@ import com.example.airbnb.dto.create.CreateAccommodationDTO;
 import com.example.airbnb.dto.display.DisplayAccommodationDTO;
 import com.example.airbnb.model.domains.Accommodation;
 import com.example.airbnb.model.domains.Host;
+import com.example.airbnb.model.domains.User;
 import com.example.airbnb.model.exceptions.NoAvailableRoomsException;
 import com.example.airbnb.repository.AccommodationRepository;
 import com.example.airbnb.repository.HostRepository;
@@ -70,5 +71,83 @@ public class AccommodationServiceImpl implements AccommodationService {
     public Optional<Accommodation> findById(Long id) {
         return accommodationRepository.findById(id);
     }
+
+    @Override
+    public boolean rentById(Long id, User user) {
+        return accommodationRepository.findById(id)
+                .filter(acc -> acc.getNumRooms() > 0)
+                .map(acc -> {
+                    acc.setNumRooms(acc.getNumRooms() - 1);
+                    accommodationRepository.save(acc);
+                    user.getRentedAccommodations().add(acc);
+                    return true;
+                })
+                .orElseThrow(() -> new NoAvailableRoomsException(id));
+    }
+
+    @Override
+    public boolean returnById(Long id, User user) {
+        return accommodationRepository.findById(id)
+                .map(acc -> {
+                    acc.setNumRooms(acc.getNumRooms() + 1);
+                    accommodationRepository.save(acc);
+                    user.getRentedAccommodations().removeIf(a -> a.getId().equals(id));
+                    return true;
+                })
+                .orElseThrow(() -> new RuntimeException("Accommodation not found with id: " + id));
+    }
+
+    @Override
+    public void addToWishlist(Long id, User user) {
+        for (Accommodation acc : user.getWishlist()) {
+            if (acc.getId().equals(id)) {
+                throw new RuntimeException("Accommodation already in wishlist: " + id);
+            }
+        }
+
+        Accommodation acc = accommodationRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Accommodation not found: " + id));
+
+        if (acc.getNumRooms() < 1) {
+            throw new NoAvailableRoomsException(id);
+        }
+
+        user.getWishlist().add(acc);
+    }
+
+    @Override
+    public void removeFromWishlist(Long id, User user) {
+        user.getWishlist().removeIf(acc -> acc.getId().equals(id));
+    }
+
+    @Override
+    public void rentAllFromWishlist(User user) {
+        if (user.getWishlist().isEmpty()) {
+            throw new RuntimeException("Wishlist is empty");
+        }
+
+        if (!areAccommodationsAvailable(user.getWishlist())) {
+            throw new NoAvailableRoomsException(0L);
+        }
+
+        for (Accommodation acc : user.getWishlist()) {
+            rentById(acc.getId(), user);
+        }
+    }
+
+    @Override
+    public List<Accommodation> findAllFromWishlist(User user) {
+        return user.getWishlist();
+    }
+
+    public boolean areAccommodationsAvailable(List<Accommodation> accommodations) {
+        for (Accommodation acc : accommodations) {
+            if (acc.getNumRooms() < 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 
 }

@@ -7,26 +7,27 @@ import com.example.airbnb.model.domains.Accommodation;
 //import com.example.airbnb.dto.AvailabaleDTO;
 //import com.example.airbnb.service.AvailableService;
 import com.example.airbnb.service.application.AccommodationApplicationService;
-import com.example.airbnb.service.domain.AccommodationService;
+import com.example.airbnb.service.application.AccommodationRentApplicationService;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/accommodations")
 public class AccommodationController {
 
     private final AccommodationApplicationService accommodationApplicationService;
+    private final AccommodationRentApplicationService accommodationRentApplicationService;
+
 //    private final AvailableService availableService;
 
-    public AccommodationController(AccommodationApplicationService accommodationApplicationService
+    public AccommodationController(AccommodationApplicationService accommodationApplicationService,
                                    //, AvailableService availableService
-                                   ) {
+                                   AccommodationRentApplicationService accommodationRentApplicationService) {
         this.accommodationApplicationService = accommodationApplicationService;
 //        this.availableService = availableService;
+        this.accommodationRentApplicationService = accommodationRentApplicationService;
     }
 
 
@@ -61,6 +62,48 @@ public class AccommodationController {
     public ResponseEntity<Accommodation> reserveAccommodation(@PathVariable Long id) throws Exception {
         return ResponseEntity.ok(this.accommodationApplicationService.reservation(id));
     }
+
+
+
+    //ovoj e za wishyoumeri krismes
+
+
+
+    @PostMapping("/wishlist/add/{id}")
+    public ResponseEntity<?> addAccommodationToWishList(@PathVariable Long id) {
+        accommodationRentApplicationService.addAccommodationToWishList(id);
+        return ResponseEntity.ok().build();
+    }
+
+    @DeleteMapping("/wishlist/remove/{id}")
+    public ResponseEntity<?> removeAccommodationFromWishList(@PathVariable Long id) {
+        accommodationRentApplicationService.removeAccommodationFromWishList(id);
+        return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/wishlist")
+    public ResponseEntity<?> listAllInWishList() {
+        return ResponseEntity.ok(accommodationRentApplicationService.findAllInWishList());
+    }
+
+    @PostMapping("/rent/all")
+    public ResponseEntity<?> rentAllFromWishList() {
+        boolean result = accommodationRentApplicationService.rentAllFromWishList();
+        return ResponseEntity.ok(result);
+    }
+
+    @PostMapping("/rent/{id}")
+    public ResponseEntity<?> rentAccommodation(@PathVariable Long id) {
+        boolean result = accommodationRentApplicationService.rentAccommodation(id);
+        return ResponseEntity.ok(result);
+    }
+
+    @PostMapping("/return/{id}")
+    public ResponseEntity<?> returnAccommodation(@PathVariable Long id) {
+        accommodationRentApplicationService.returnAccommodation(id);
+        return ResponseEntity.ok().build();
+    }
+
 
 
 

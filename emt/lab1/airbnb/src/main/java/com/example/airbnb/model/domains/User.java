@@ -7,8 +7,10 @@ import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 @Entity
 @Data
@@ -27,36 +29,51 @@ public class User implements UserDetails {
     @Enumerated(value = EnumType.STRING)
     private Role role;
 
-//    @ManyToMany
-//    private List<Book> bookWishlist;
-//
-//    @ManyToMany
-//    private List<Book> rentedBooks;
+    @ManyToMany
+    private List<Accommodation> accommodationWishlist;
 
+    @ManyToMany
+    private List<Accommodation> rentedAccommodation;
+
+    public List<Accommodation> getAccommodationWishlist() {
+        return accommodationWishlist;
+    }
+
+    public List<Accommodation> getRentedAccommodation() {
+        return rentedAccommodation;
+    }
+
+    public void setAccommodationWishlist(List<Accommodation> accommodationWishlist) {
+        this.accommodationWishlist = accommodationWishlist;
+    }
+
+    public void setRentedAccommodation(List<Accommodation> rentedAccommodation) {
+        this.rentedAccommodation = rentedAccommodation;
+    }
 
     public User(String username, String password, String name, Role role) {
         this.username = username;
         this.password = password;
         this.name = name;
         this.role = role;
-//        bookWishlist = new ArrayList<>();
-//        rentedBooks = new ArrayList<>();
+        accommodationWishlist = new ArrayList<>();
+        rentedAccommodation = new ArrayList<>();
     }
     public User(String username, String password, String name) {
         this.username = username;
         this.password = password;
         this.name = name;
         this.role = Role.ROLE_USER;
-//        rentedBooks = new ArrayList<>();
-//        bookWishlist = new ArrayList<>();
+        accommodationWishlist = new ArrayList<>();
+        rentedAccommodation = new ArrayList<>();
     }
 
     public User(UserDetails userDetails) {
         this.username = userDetails.getUsername();
         this.password = userDetails.getPassword();
         this.role = Role.ROLE_USER;
-//        bookWishlist = new ArrayList<>();
-//        rentedBooks = new ArrayList<>();
+        accommodationWishlist = new ArrayList<>();
+        rentedAccommodation = new ArrayList<>();
     }
 
     public User() {

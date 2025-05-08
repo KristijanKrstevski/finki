@@ -1,0 +1,62 @@
+[Tue Apr 01 22:30:05 UTC 2025] Received Push event to branch master in repository KristijanKrstevski/jenkins-pipeline-test UPDATED event from 140.82.115.208 ⇒ https://49ce-77-29-217-128.ngrok-free.app:8080/github-webhook/ with timestamp Tue Apr 01 22:30:00 UTC 2025
+[8mha:////4JVhE4eE8B3xYybxp42EnbBF/m7cetwpZuAkJfe1sVw2AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgPTUz5WPdQC1rbWwjgAAAA==[0mConnecting to https://api.github.com using KristijanKrstevski/****** (GitHub credentiald for kiko)
+Examining [8mha:////4DOkelksUXUb/aRuSIlFveOrka0jOPNq48jxyLU/5YPbAAAAth+LCAAAAAAAAP9djrENwjAQRY8gGIASMQBN4o6CKBUNKBENEwQ42U7MxfJdorAGa0DDEIzDDgTR8Zv/m/f0H2+YcICFac/cUHJqiBuHyfbqMThL9b4RXGX3Z3bzrwiiHUwdkhZTwLgNTmBWVGVXKleSVgcJlnTaB5j/6Ta//srgl1EE0PthLAVSI+J5rZS2YtrjQF1UHiyLrUrKAwt2XFtVIdWWOPbW43ANY0GWD8wP7CXAAAAA[0mKristijanKrstevski/jenkins-pipeline-test
+
+  Checking branches...
+
+  Getting remote branch master...
+
+    Checking branch [8mha:////4IDQbaDhXak7dsw/ciYmkQ/cyKqOzZlQy1uPfz3G4n5KAAAAvR+LCAAAAAAAAP9djrENwkAQBA8jXAAhogX8GQGIiAAQFgkVPHCy337Or7uzZdqgDUgognLoASNnbLIb7I72+YGRMEzz+iIVJeeKpPKYbG8B2TsqD5XifPV4re7hHUG0g9gjZZqnMKzZK4zTwjbWeEuZOSo7ypYtw+QPt+79B4NegwigDV2IFTa5apCFMZnTvD51q6vZsxN1haU9i2IjpTMFUulIZsEF7K7hTFHUKCOaq+1K/AUNJkV3zAAAAA==[0mmaster
+      ‘Jenkinsfile’ found
+    Met criteria
+Changes detected: master (546f6e1e52a00e3637c525a3039636f38627418e → db0c0bd252cabc009f59714d8dc3602835f9e5b9)
+Scheduled build for branch: master
+
+  1 branches were processed (query completed)
+
+  1 branches were processed
+
+Finished examining KristijanKrstevski/jenkins-pipeline-test
+
+[Tue Apr 01 22:30:07 UTC 2025] Push event to branch master in repository KristijanKrstevski/jenkins-pipeline-test UPDATED event from 140.82.115.208 ⇒ https://49ce-77-29-217-128.ngrok-free.app:8080/github-webhook/ with timestamp Tue Apr 01 22:30:00 UTC 2025 processed in 2 sec
+[Tue Apr 01 22:35:01 UTC 2025] Received Push event to branch dev in repository KristijanKrstevski/jenkins-pipeline-test CREATED event from 140.82.115.201 ⇒ https://49ce-77-29-217-128.ngrok-free.app:8080/github-webhook/ with timestamp Tue Apr 01 22:34:56 UTC 2025
+[8mha:////4Bpg4INplgoeqSp51dgRtKm2zENXEae2qcT2rJmU8H4YAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgPTUz3WppgA9LEi8jgAAAA==[0mConnecting to https://api.github.com using KristijanKrstevski/****** (GitHub credentiald for kiko)
+Examining [8mha:////4DOkelksUXUb/aRuSIlFveOrka0jOPNq48jxyLU/5YPbAAAAth+LCAAAAAAAAP9djrENwjAQRY8gGIASMQBN4o6CKBUNKBENEwQ42U7MxfJdorAGa0DDEIzDDgTR8Zv/m/f0H2+YcICFac/cUHJqiBuHyfbqMThL9b4RXGX3Z3bzrwiiHUwdkhZTwLgNTmBWVGVXKleSVgcJlnTaB5j/6Ta//srgl1EE0PthLAVSI+J5rZS2YtrjQF1UHiyLrUrKAwt2XFtVIdWWOPbW43ANY0GWD8wP7CXAAAAA[0mKristijanKrstevski/jenkins-pipeline-test
+
+  Checking branches...
+
+  Getting remote branch dev...
+
+    Checking branch [8mha:////4GVC1tqllnbzJq+kzKdzheB3YkYbD3v4II2vcZEq7i6WAAAAux+LCAAAAAAAAP9djjEOgkAQRUeIHsDSeAXYzkJDpYUGYuMJUCawsM5udgaC1/Aa2ngIj+MdxND5m/+b9/KfH5iyh2XVFmwpvlhiazDe3xx6o6k5WsFV8ngld/cOIDjAzCCVUmUQtt4IzLM673JlcirVSbymctN7WPzptmP/ZDBmEgD0bhihwK4ScbxWqtRSteeBuqrUaxZd55R6Fuy40apGajRx5LTD4RpGgixKPKIqsPsCqmcWSskAAAA=[0mdev
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: dev
+
+  1 branches were processed (query completed)
+
+  1 branches were processed
+
+Finished examining KristijanKrstevski/jenkins-pipeline-test
+
+[Tue Apr 01 22:35:03 UTC 2025] Push event to branch dev in repository KristijanKrstevski/jenkins-pipeline-test CREATED event from 140.82.115.201 ⇒ https://49ce-77-29-217-128.ngrok-free.app:8080/github-webhook/ with timestamp Tue Apr 01 22:34:56 UTC 2025 processed in 1.6 sec
+[Tue Apr 01 22:35:33 UTC 2025] Received Push event to branch dev in repository KristijanKrstevski/jenkins-pipeline-test UPDATED event from 140.82.115.192 ⇒ https://49ce-77-29-217-128.ngrok-free.app:8080/github-webhook/ with timestamp Tue Apr 01 22:35:28 UTC 2025
+[8mha:////4NjUfT3VJIj9VMRHer97Uvj6Z7GMAUaTRHZSLjDhrNdFAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgPTUz3WPxQCCYvZzjgAAAA==[0mConnecting to https://api.github.com using KristijanKrstevski/****** (GitHub credentiald for kiko)
+Examining [8mha:////4DOkelksUXUb/aRuSIlFveOrka0jOPNq48jxyLU/5YPbAAAAth+LCAAAAAAAAP9djrENwjAQRY8gGIASMQBN4o6CKBUNKBENEwQ42U7MxfJdorAGa0DDEIzDDgTR8Zv/m/f0H2+YcICFac/cUHJqiBuHyfbqMThL9b4RXGX3Z3bzrwiiHUwdkhZTwLgNTmBWVGVXKleSVgcJlnTaB5j/6Ta//srgl1EE0PthLAVSI+J5rZS2YtrjQF1UHiyLrUrKAwt2XFtVIdWWOPbW43ANY0GWD8wP7CXAAAAA[0mKristijanKrstevski/jenkins-pipeline-test
+
+  Checking branches...
+
+  Getting remote branch dev...
+
+    Checking branch [8mha:////4GVC1tqllnbzJq+kzKdzheB3YkYbD3v4II2vcZEq7i6WAAAAux+LCAAAAAAAAP9djjEOgkAQRUeIHsDSeAXYzkJDpYUGYuMJUCawsM5udgaC1/Aa2ngIj+MdxND5m/+b9/KfH5iyh2XVFmwpvlhiazDe3xx6o6k5WsFV8ngld/cOIDjAzCCVUmUQtt4IzLM673JlcirVSbymctN7WPzptmP/ZDBmEgD0bhihwK4ScbxWqtRSteeBuqrUaxZd55R6Fuy40apGajRx5LTD4RpGgixKPKIqsPsCqmcWSskAAAA=[0mdev
+      ‘Jenkinsfile’ found
+    Met criteria
+Changes detected: dev (db0c0bd252cabc009f59714d8dc3602835f9e5b9 → 3ede2c9d0dd60dea5b75f87953ce6c834eb7a11a)
+Scheduled build for branch: dev
+
+  1 branches were processed (query completed)
+
+  1 branches were processed
+
+Finished examining KristijanKrstevski/jenkins-pipeline-test
+
+[Tue Apr 01 22:35:35 UTC 2025] Push event to branch dev in repository KristijanKrstevski/jenkins-pipeline-test UPDATED event from 140.82.115.192 ⇒ https://49ce-77-29-217-128.ngrok-free.app:8080/github-webhook/ with timestamp Tue Apr 01 22:35:28 UTC 2025 processed in 1.4 sec

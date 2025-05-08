@@ -2,8 +2,10 @@ package com.example.airbnb.service.application.impl;
 
 import com.example.airbnb.dto.create.CreateUserDTO;
 import com.example.airbnb.dto.display.DisplayUserDTO;
+import com.example.airbnb.dto.login.LoginResponseDTO;
 import com.example.airbnb.dto.login.LoginUserDTO;
 import com.example.airbnb.model.domains.User;
+import com.example.airbnb.security.JwtHelper;
 import com.example.airbnb.service.application.UserApplicationService;
 import com.example.airbnb.service.domain.UserService;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,9 +16,10 @@ import java.util.Optional;
 @Service
 public class UserApplicationServiceImpl implements UserApplicationService {
     private final UserService userService;
-
-    public UserApplicationServiceImpl(UserService userService) {
+    private final JwtHelper jwtHelper;
+    public UserApplicationServiceImpl(UserService userService, JwtHelper jwtHelper) {
         this.userService = userService;
+        this.jwtHelper = jwtHelper;
     }
 
     @Override
@@ -32,18 +35,17 @@ public class UserApplicationServiceImpl implements UserApplicationService {
     }
 
     @Override
-    public Optional<DisplayUserDTO> login(LoginUserDTO loginUserDto, HttpServletRequest request) {
-        return Optional.of(DisplayUserDTO.from(userService.login(
-                loginUserDto.username(),
-                loginUserDto.password(),
-                request
-        )));
+    public Optional<LoginResponseDTO> login(LoginUserDTO loginUserDto) {
+        User user = userService.login(loginUserDto.username(),loginUserDto.password());
+
+        String token = jwtHelper.generateToken(user);
+        return Optional.of(new LoginResponseDTO(token));
     }
 
-    @Override
-    public void logout() {
-        userService.logout();
-    }
+//    @Override
+//    public void logout() {
+//        userService.logout();
+//    }
 
     @Override
     public Optional<DisplayUserDTO> findByUsername(String username) {

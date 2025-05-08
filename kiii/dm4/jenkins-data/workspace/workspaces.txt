@@ -1,0 +1,4 @@
+jenkins-pipeline-test/dev
+jenkins-pipeline-test_dev
+jenkins-pipeline-test/master
+jenkins-pipeline-test_master

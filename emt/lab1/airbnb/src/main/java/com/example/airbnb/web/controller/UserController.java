@@ -2,6 +2,7 @@ package com.example.airbnb.web.controller;
 
 import com.example.airbnb.dto.create.CreateUserDTO;
 import com.example.airbnb.dto.display.DisplayUserDTO;
+import com.example.airbnb.dto.login.LoginResponseDTO;
 import com.example.airbnb.dto.login.LoginUserDTO;
 import com.example.airbnb.service.application.UserApplicationService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -35,18 +36,18 @@ public class UserController {
     }
     @Operation(summary = "User login", description = "Authenticates a user and starts a session")
     @PostMapping("/login")
-    public ResponseEntity<DisplayUserDTO> login(@RequestBody LoginUserDTO loginUserDto, HttpServletRequest request) {
-        DisplayUserDTO body = userApplicationService.login(loginUserDto, request).orElseThrow();
-        System.out.println(body.role());
+    public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginUserDTO loginUserDto) {
+        LoginResponseDTO body = userApplicationService.login(loginUserDto).orElseThrow();
+
         return ResponseEntity.ok(body);
     }
 
-    @Operation(summary = "User logout", description = "Ends the user's session")
-    @GetMapping("/logout")
-    public ResponseEntity<?> logout() {
-        userApplicationService.logout();
-        return ResponseEntity.ok().build();
-    }
+//    @Operation(summary = "User logout", description = "Ends the user's session")
+//    @GetMapping("/logout")
+//    public ResponseEntity<?> logout() {
+//        userApplicationService.logout();
+//        return ResponseEntity.ok().build();
+//    }
 
     @GetMapping("/role")
     public ResponseEntity<?> getRole(){

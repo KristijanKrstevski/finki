@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2025-04-01 20:07:09.802 UTC</timestamp>
+  <md5sum>9d5a55d5214d183786cb9c3f654fdf84</md5sum>
+  <fileName>Credential id=github name=KristijanKrstevski/****** (GitHub credentiald for kiko)</fileName>
+  <usages>
+    <entry>
+      <string>jenkins-pipeline-test/dev</string>
+      <ranges>1-2</ranges>
+    </entry>
+    <entry>
+      <string>jenkins-pipeline-test/master</string>
+      <ranges>1-3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

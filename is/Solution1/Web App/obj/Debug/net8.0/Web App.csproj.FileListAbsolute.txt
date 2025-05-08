@@ -1,0 +1,10 @@
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.csproj.AssemblyReference.cache
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.GeneratedMSBuildEditorConfig.editorconfig
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.AssemblyInfoInputs.cache
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.AssemblyInfo.cs
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.csproj.CoreCompileInputs.cache
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.MvcApplicationPartsAssemblyInfo.cs
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.MvcApplicationPartsAssemblyInfo.cache
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.RazorAssemblyInfo.cache
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.RazorAssemblyInfo.cs
+E:\finki\is\Solution1\Web App\obj\Debug\net8.0\Web App.sourcelink.json

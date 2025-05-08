@@ -1,8 +1,14 @@
 package com.example.airbnb.service.domain.impl;
 
+import com.example.airbnb.events.HostChangeEvent;
+import com.example.airbnb.events.HostCreatedEvent;
+import com.example.airbnb.events.HostDeletedEvent;
 import com.example.airbnb.model.domains.Host;
+import com.example.airbnb.projection.HostProjection;
 import com.example.airbnb.repository.HostRepository;
+import com.example.airbnb.repository.view.HostByCountryViewRepository;
 import com.example.airbnb.service.domain.HostService;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,9 +18,12 @@ import java.util.Optional;
 public class HostServiceImpl implements HostService {
 
     private final HostRepository hostRepository;
-
-    public HostServiceImpl(HostRepository hostRepository) {
+    private final HostByCountryViewRepository hostByCountryViewRepository;
+    private final ApplicationEventPublisher applicationEventPublisher;
+    public HostServiceImpl(HostRepository hostRepository, HostByCountryViewRepository hostByCountryViewRepository, ApplicationEventPublisher applicationEventPublisher) {
         this.hostRepository = hostRepository;
+        this.hostByCountryViewRepository = hostByCountryViewRepository;
+        this.applicationEventPublisher = applicationEventPublisher;
     }
 
     @Override
@@ -29,7 +38,10 @@ public class HostServiceImpl implements HostService {
 
     @Override
     public Host save(Host host) {
-        return hostRepository.save(host);
+        Host savedHost = hostRepository.save(host);
+//        this.refreshMaterializedView();
+        this.applicationEventPublisher.publishEvent(new HostCreatedEvent(savedHost));
+        return savedHost;
     }
 
     @Override
@@ -40,11 +52,27 @@ public class HostServiceImpl implements HostService {
         existingHost.setSurname(host.getSurname());
         existingHost.setCountry(host.getCountry());
 
-        return hostRepository.save(existingHost);
+        Host updatedHost = hostRepository.save(existingHost);
+//        this.refreshMaterializedView();
+        this.applicationEventPublisher.publishEvent(new HostChangeEvent(updatedHost));
+        return updatedHost;
     }
+
 
     @Override
     public void delete(Long id) {
+        Host host = hostRepository.findById(id).orElseThrow();
         hostRepository.deleteById(id);
+        this.applicationEventPublisher.publishEvent(new HostDeletedEvent(host));
+    }
+
+    @Override
+    public void refreshMaterializedView() {
+        this.hostByCountryViewRepository.refreshMaterializedView();
+    }
+
+    @Override
+    public List<HostProjection> takeNameAndSurnameByProjection() {
+        return hostRepository.takeNameAndSurnameByProjection();
     }
 }

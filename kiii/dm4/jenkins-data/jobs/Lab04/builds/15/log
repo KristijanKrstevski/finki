@@ -1,0 +1,29 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Lab04
+The recommended git tool is: NONE
+using credential a14198bf-c1cb-4e9c-ade8-3977d065865f
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Lab04/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/KristijanKrstevski/finki # timeout=10
+Fetching upstream changes from https://github.com/KristijanKrstevski/finki
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+using GIT_ASKPASS to set credentials Github Credentials
+ > git fetch --tags --force --progress -- https://github.com/KristijanKrstevski/finki +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 656b67e21d347f58ed7629e1ff51025741a074bd (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 656b67e21d347f58ed7629e1ff51025741a074bd # timeout=10
+Commit message: "Updating files and adding dnick"
+ > git rev-list --no-walk 656b67e21d347f58ed7629e1ff51025741a074bd # timeout=10
+[Lab04] $ /bin/sh -xe /tmp/jenkins18091335743816885548.sh
++ ls -l
+total 0
+-rw-r--r-- 1 jenkins jenkins  276 Apr  1 16:02 README.md
+drwxr-xr-x 1 jenkins jenkins 4096 Apr  1 16:02 dnick
+drwxr-xr-x 1 jenkins jenkins 4096 Apr  1 16:02 emt
+drwxr-xr-x 1 jenkins jenkins 4096 Apr  1 16:03 kiii
+-rw-r--r-- 1 jenkins jenkins    1 Apr  1 16:03 mobilni informaciski sistemi
+drwxr-xr-x 1 jenkins jenkins 4096 Apr  1 16:03 web programing
+Finished: SUCCESS

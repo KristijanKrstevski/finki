@@ -1,12 +1,16 @@
 package com.example.airbnb.web.controller;
 
 import com.example.airbnb.dto.create.CreateHostDTO;
+import com.example.airbnb.model.views.HostByCountry;
+import com.example.airbnb.projection.HostProjection;
 import com.example.airbnb.service.application.HostApplicationService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/hosts")
@@ -47,5 +51,16 @@ public class HostController {
     public ResponseEntity<?> deleteBook(@PathVariable Long id) {
         hostApplicationService.delete(id);
         return ResponseEntity.ok().build();
+    }
+
+
+    @GetMapping("/by-country")
+    public List<HostByCountry> getHostsByCountry() {
+        return hostApplicationService.getHostsByCountry();
+    }
+
+    @GetMapping("/names")
+    public List<HostProjection> getAllUserNames() {
+        return hostApplicationService.takeNameAndSurnameByProjection();
     }
 }

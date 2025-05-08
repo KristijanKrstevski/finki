@@ -1,0 +1,6 @@
+E:\finki\is\Concert\EConecrt.Service\obj\Debug\net8.0\EConecrt.Service.csproj.AssemblyReference.cache
+E:\finki\is\Concert\EConecrt.Service\obj\Debug\net8.0\EConecrt.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\finki\is\Concert\EConecrt.Service\obj\Debug\net8.0\EConecrt.Service.AssemblyInfoInputs.cache
+E:\finki\is\Concert\EConecrt.Service\obj\Debug\net8.0\EConecrt.Service.AssemblyInfo.cs
+E:\finki\is\Concert\EConecrt.Service\obj\Debug\net8.0\EConecrt.Service.csproj.CoreCompileInputs.cache
+E:\finki\is\Concert\EConecrt.Service\obj\Debug\net8.0\EConecrt.Service.sourcelink.json

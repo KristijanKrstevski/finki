@@ -1,0 +1,65 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1508.v9cb_c3a_a_89dfd">
+  <actions/>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@803.v08103b_87c280">
+      <branch plugin="branch-api@2.1214.v3f652804588d">
+        <sourceId>blueocean</sourceId>
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@1815.v9152b_2ff7a_1b_">
+          <name>dev</name>
+        </head>
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@5.7.0">
+          <configVersion>2</configVersion>
+          <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+              <name>origin</name>
+              <refspec>+refs/heads/dev:refs/remotes/origin/dev</refspec>
+              <url>https://github.com/KristijanKrstevski/jenkins-pipeline-test.git</url>
+              <credentialsId>github</credentialsId>
+            </hudson.plugins.git.UserRemoteConfig>
+          </userRemoteConfigs>
+          <branches class="singleton-list">
+            <hudson.plugins.git.BranchSpec>
+              <name>dev</name>
+            </hudson.plugins.git.BranchSpec>
+          </branches>
+          <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+          <browser class="hudson.plugins.git.browser.GithubWeb">
+            <url>https://github.com/KristijanKrstevski/jenkins-pipeline-test</url>
+          </browser>
+          <submoduleCfg class="empty-list"/>
+          <extensions>
+            <hudson.plugins.git.extensions.impl.CleanBeforeCheckout>
+              <deleteUntrackedNestedRepositories>false</deleteUntrackedNestedRepositories>
+            </hudson.plugins.git.extensions.impl.CleanBeforeCheckout>
+            <hudson.plugins.git.extensions.impl.CleanCheckout>
+              <deleteUntrackedNestedRepositories>false</deleteUntrackedNestedRepositories>
+            </hudson.plugins.git.extensions.impl.CleanCheckout>
+            <hudson.plugins.git.extensions.impl.LocalBranch>
+              <localBranch>**</localBranch>
+            </hudson.plugins.git.extensions.impl.LocalBranch>
+            <jenkins.plugins.git.GitSCMSourceDefaults>
+              <includeTags>false</includeTags>
+            </jenkins.plugins.git.GitSCMSourceDefaults>
+          </extensions>
+        </scm>
+        <properties/>
+        <actions>
+          <org.jenkinsci.plugins.github__branch__source.GitHubLink plugin="github-branch-source@1815.v9152b_2ff7a_1b_">
+            <url>https://github.com/KristijanKrstevski/jenkins-pipeline-test/tree/dev</url>
+          </org.jenkinsci.plugins.github__branch__source.GitHubLink>
+          <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@704.v3ce5c542825a_">
+            <objectDisplayName>dev</objectDisplayName>
+            <objectUrl>https://github.com/KristijanKrstevski/jenkins-pipeline-test/tree/dev</objectUrl>
+          </jenkins.scm.api.metadata.ObjectMetadataAction>
+        </actions>
+      </branch>
+    </org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.multibranch.SCMBinder" plugin="workflow-multibranch@803.v08103b_87c280">
+    <scriptPath>Jenkinsfile</scriptPath>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,13 @@
+E:\finki\is\Solution1\Domain\bin\Debug\net8.0\Domain.deps.json
+E:\finki\is\Solution1\Domain\bin\Debug\net8.0\Domain.dll
+E:\finki\is\Solution1\Domain\bin\Debug\net8.0\Domain.pdb
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\Domain.dll
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\refint\Domain.dll
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\Domain.pdb
+E:\finki\is\Solution1\Domain\obj\Debug\net8.0\ref\Domain.dll

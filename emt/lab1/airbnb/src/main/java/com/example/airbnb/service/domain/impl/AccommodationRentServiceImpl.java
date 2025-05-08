@@ -25,7 +25,7 @@ public class AccommodationRentServiceImpl implements AccommodationRentService {
 
     @Override
     public List<Accommodation> findAllRentedAccommodationsForCurrentUser() {
-        User authUser = userService.getAuthenticatedUser();
+        User authUser = userService.getAuthenticatedUser("Bearer ");
         List<Accommodation> accommodations = accommodationRentRepository.findByUser(authUser)
                 .stream().map(AccommodationRent::getAccommodation).toList();
 

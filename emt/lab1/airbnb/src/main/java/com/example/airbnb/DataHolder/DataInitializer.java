@@ -31,8 +31,8 @@ public class DataInitializer {
         this.passwordEncoder = passwordEncoder;
         this.accommodationRepository = accommodationRepository;
     }
-    @PostConstruct
-    public void initializeData() {
+    //@PostConstruct
+    public void init() {
         Country country1 = new Country("Macedonia", "Europe");
         Country country2 = new Country("Brasil", "South America");
         Country country3 = new Country("Japan", "Asia");

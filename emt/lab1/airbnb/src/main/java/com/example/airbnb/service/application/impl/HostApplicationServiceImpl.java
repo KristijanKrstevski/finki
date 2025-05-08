@@ -4,6 +4,9 @@ import com.example.airbnb.dto.create.CreateHostDTO;
 import com.example.airbnb.dto.display.DisplayHostDTO;
 import com.example.airbnb.model.domains.Country;
 import com.example.airbnb.model.domains.Host;
+import com.example.airbnb.model.views.HostByCountry;
+import com.example.airbnb.projection.HostProjection;
+import com.example.airbnb.repository.view.HostByCountryViewRepository;
 import com.example.airbnb.service.application.HostApplicationService;
 import com.example.airbnb.service.domain.CountryService;
 import com.example.airbnb.service.domain.HostService;
@@ -19,9 +22,11 @@ public class HostApplicationServiceImpl implements HostApplicationService {
     private final HostService hostService;
     private final CountryService countryService;
 
-    public HostApplicationServiceImpl(HostService hostService, CountryService countryService) {
+    private final HostByCountryViewRepository hostByCountryViewRepository;
+    public HostApplicationServiceImpl(HostService hostService, CountryService countryService, HostByCountryViewRepository hostByCountryViewRepository) {
         this.hostService = hostService;
         this.countryService = countryService;
+        this.hostByCountryViewRepository = hostByCountryViewRepository;
     }
     @Override
     public List<DisplayHostDTO> findAll() {
@@ -63,5 +68,15 @@ public class HostApplicationServiceImpl implements HostApplicationService {
     @Override
     public void delete(Long id) {
         hostService.delete(id);
+    }
+
+    @Override
+    public List<HostByCountry> getHostsByCountry() {
+        return hostByCountryViewRepository.findAll();
+    }
+
+    @Override
+    public List<HostProjection> takeNameAndSurnameByProjection() {
+        return hostService.takeNameAndSurnameByProjection();
     }
 }

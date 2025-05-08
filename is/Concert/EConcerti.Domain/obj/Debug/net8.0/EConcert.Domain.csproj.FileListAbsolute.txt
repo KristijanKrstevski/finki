@@ -1,0 +1,13 @@
+E:\finki\is\Concert\EConcerti.Domain\bin\Debug\net8.0\EConcert.Domain.deps.json
+E:\finki\is\Concert\EConcerti.Domain\bin\Debug\net8.0\EConcert.Domain.dll
+E:\finki\is\Concert\EConcerti.Domain\bin\Debug\net8.0\EConcert.Domain.pdb
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\EConcert.Domain.csproj.AssemblyReference.cache
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\EConcert.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\EConcert.Domain.AssemblyInfoInputs.cache
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\EConcert.Domain.AssemblyInfo.cs
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\EConcert.Domain.csproj.CoreCompileInputs.cache
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\EConcert.Domain.sourcelink.json
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\EConcert.Domain.dll
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\refint\EConcert.Domain.dll
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\EConcert.Domain.pdb
+E:\finki\is\Concert\EConcerti.Domain\obj\Debug\net8.0\ref\EConcert.Domain.dll

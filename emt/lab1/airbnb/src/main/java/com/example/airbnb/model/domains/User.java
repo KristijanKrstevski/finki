@@ -35,13 +35,6 @@ public class User implements UserDetails {
     @ManyToMany
     private List<Accommodation> rentedAccommodation;
 
-    public List<Accommodation> getAccommodationWishlist() {
-        return accommodationWishlist;
-    }
-
-    public List<Accommodation> getRentedAccommodation() {
-        return rentedAccommodation;
-    }
 
     public void setAccommodationWishlist(List<Accommodation> accommodationWishlist) {
         this.accommodationWishlist = accommodationWishlist;
@@ -82,6 +75,13 @@ public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList((GrantedAuthority) role);
+    }
+    public List<Accommodation> getAccommodationWishlist() {
+        return accommodationWishlist;
+    }
+
+    public List<Accommodation> getRentedAccommodation() {
+        return rentedAccommodation;
     }
 
     public String getName() {

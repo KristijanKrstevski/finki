@@ -1,17 +1,22 @@
 package com.example.airbnb.web.controller;
 
 import com.example.airbnb.dto.create.CreateAccommodationDTO;
-import com.example.airbnb.model.domains.Accommodation;
+import com.example.airbnb.dto.display.DisplayAccommodationDTO;
 //import com.example.airbnb.model.domains.Available;
 //import com.example.airbnb.dto.AccommodationDTO;
 //import com.example.airbnb.dto.AvailabaleDTO;
 //import com.example.airbnb.service.AvailableService;
+import com.example.airbnb.security.JwtConstants;
 import com.example.airbnb.service.application.AccommodationApplicationService;
 import com.example.airbnb.service.application.AccommodationRentApplicationService;
+import com.example.airbnb.service.application.HostApplicationService;
 import io.swagger.v3.oas.annotations.Operation;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/accommodations")
@@ -20,14 +25,16 @@ public class AccommodationController {
     private final AccommodationApplicationService accommodationApplicationService;
     private final AccommodationRentApplicationService accommodationRentApplicationService;
 
+    private final HostApplicationService hostApplicationService;
 //    private final AvailableService availableService;
 
     public AccommodationController(AccommodationApplicationService accommodationApplicationService,
                                    //, AvailableService availableService
-                                   AccommodationRentApplicationService accommodationRentApplicationService) {
+                                   AccommodationRentApplicationService accommodationRentApplicationService, HostApplicationService hostApplicationService) {
         this.accommodationApplicationService = accommodationApplicationService;
 //        this.availableService = availableService;
         this.accommodationRentApplicationService = accommodationRentApplicationService;
+        this.hostApplicationService = hostApplicationService;
     }
 
 
@@ -58,57 +65,71 @@ public class AccommodationController {
         return ResponseEntity.ok(accommodationApplicationService.update(id, bookDto));
     }
 
-    @PutMapping("/reserve/{id}")
-    public ResponseEntity<Accommodation> reserveAccommodation(@PathVariable Long id) throws Exception {
-        return ResponseEntity.ok(this.accommodationApplicationService.reservation(id));
+    // Remove accommodation from user's temporary reservation list
+    @DeleteMapping("/delete/{id}")
+    @Operation(summary = "Delete an accommodation by ID", description = "Deletes the accommodation with the given ID if it exists")
+    public ResponseEntity<?> deleteAccommodation(@PathVariable Long id) {
+        accommodationApplicationService.delete(id);
+        return ResponseEntity.ok().build();
     }
 
+//    @PutMapping("/reserve/{id}")
+//    public ResponseEntity<Accommodation> reserveAccommodation(@PathVariable Long id) throws Exception {
+//        return ResponseEntity.ok(this.accommodationApplicationService.reservation(id));
+//    }
+//
 
 
     //ovoj e za wishyoumeri krismes
 
 
 
-    @PostMapping("/wishlist/add/{id}")
-    public ResponseEntity<?> addAccommodationToWishList(@PathVariable Long id) {
-        accommodationRentApplicationService.addAccommodationToWishList(id);
+    public String extractTokenFromRequest(HttpServletRequest request){
+        String headerValue = request.getHeader(JwtConstants.HEADER);
+        return headerValue.substring(JwtConstants.TOKEN_PREFIX.length());
+    }
+
+
+
+    @PostMapping("/reservations/add/{id}")
+    public ResponseEntity<?> addToReservationList(@PathVariable Long id,HttpServletRequest request) {
+        accommodationApplicationService.addToTemporarilyList(id,extractTokenFromRequest(request));
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping("/wishlist/remove/{id}")
-    public ResponseEntity<?> removeAccommodationFromWishList(@PathVariable Long id) {
-        accommodationRentApplicationService.removeAccommodationFromWishList(id);
+
+    @DeleteMapping("/reservations/remove/{id}")
+    public ResponseEntity<?> removeFromReservationList(@PathVariable Long id,HttpServletRequest request) {
+        accommodationApplicationService.removeFromTemporarilyList(id,extractTokenFromRequest(request));
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/wishlist")
-    public ResponseEntity<?> listAllInWishList() {
-        return ResponseEntity.ok(accommodationRentApplicationService.findAllInWishList());
+
+    @GetMapping("/reservations")
+    public ResponseEntity<List<DisplayAccommodationDTO>> getReservationList(HttpServletRequest request) {
+        return ResponseEntity.ok(accommodationApplicationService.findAllFromTemporarilyList(extractTokenFromRequest(request)));
     }
 
-    @PostMapping("/rent/all")
-    public ResponseEntity<?> rentAllFromWishList() {
-        boolean result = accommodationRentApplicationService.rentAllFromWishList();
+    @PostMapping("/reservations/confirm/{id}")
+    public ResponseEntity<?> confirmSingleReservation(@PathVariable Long id,HttpServletRequest request) {
+        boolean result = accommodationApplicationService.rentByAccommodationById(id,extractTokenFromRequest(request));
         return ResponseEntity.ok(result);
     }
 
-    @PostMapping("/rent/{id}")
-    public ResponseEntity<?> rentAccommodation(@PathVariable Long id) {
-        boolean result = accommodationRentApplicationService.rentAccommodation(id);
-        return ResponseEntity.ok(result);
-    }
 
-    @PostMapping("/return/{id}")
-    public ResponseEntity<?> returnAccommodation(@PathVariable Long id) {
-        accommodationRentApplicationService.returnAccommodation(id);
+    @PostMapping("/reservations/confirm-all")
+    public ResponseEntity<?> confirmAllReservations(HttpServletRequest request) {
+        accommodationApplicationService.rentAllFromTemporarilyList(extractTokenFromRequest(request));
         return ResponseEntity.ok().build();
     }
 
 
 
-
-
-
+    @GetMapping("/by-author")
+    @Operation(summary = "List number of accommodation per author for every host")
+    public ResponseEntity<?> findAllNumberOfAccommodationsPerHost() {
+        return ResponseEntity.status(HttpStatus.OK).body(accommodationApplicationService.getAccommodationByHost());
+    }
 
 
 //    @GetMapping("/{accommodationId}/availables")

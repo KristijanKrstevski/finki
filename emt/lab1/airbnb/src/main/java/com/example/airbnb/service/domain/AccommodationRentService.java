@@ -7,7 +7,7 @@ import com.example.airbnb.model.domains.User;
 import java.util.List;
 
 public interface AccommodationRentService {
-    List<Accommodation> findAllRentedAccommodationsForCurrentUser();
+    List<Accommodation> findAllRentedAccommodationsForCurrentUser();//list them all
     Accommodation findMostRentedAccommodation();
     Host findHostOfMostRentedAccommodation();
     User findUserWithMostRentedAccommodations();

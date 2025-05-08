@@ -1,0 +1,704 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\finki\\is\\Concert\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\views\\concerts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\views\\concerts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\views\\concerts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\views\\concerts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\controllers\\concertscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\controllers\\concertscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|e:\\finki\\is\\concert\\econecrt.service\\implementation\\concertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|solutionrelative:econecrt.service\\implementation\\concertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|e:\\finki\\is\\concert\\econcerti.domain\\domainmodels\\concert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|solutionrelative:econcerti.domain\\domainmodels\\concert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|e:\\finki\\is\\concert\\econecrt.service\\interface\\iconcertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|solutionrelative:econecrt.service\\interface\\iconcertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|e:\\finki\\is\\concert\\econecrt.service\\interface\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|solutionrelative:econecrt.service\\interface\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|e:\\finki\\is\\concert\\econecrt.service\\implementation\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|solutionrelative:econecrt.service\\implementation\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|e:\\finki\\is\\concert\\econcerti.domain\\domainmodels\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|solutionrelative:econcerti.domain\\domainmodels\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|e:\\finki\\is\\concert\\econecrt.service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E6255B-8B11-43B8-85B2-E729E5C87652}|EConecrt.Service\\EConecrt.Service.csproj|solutionrelative:econecrt.service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|e:\\finki\\is\\concert\\econcerti.domain\\domainmodels\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|solutionrelative:econcerti.domain\\domainmodels\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\migrations\\20250403224713_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\migrations\\20250403224713_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\migrations\\20250403233051_first datab.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\migrations\\20250403233051_first datab.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\migrations\\00000000000000_createidentityschema.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\migrations\\00000000000000_createidentityschema.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\econcert.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\econcert.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|e:\\finki\\is\\concert\\econcerti.domain\\econcert.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|solutionrelative:econcerti.domain\\econcert.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\migrations\\20250403233051_first datab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\migrations\\20250403233051_first datab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|e:\\finki\\is\\concert\\econcert.repository\\migrations\\20250403224713_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE29077-C23A-46F1-A037-A124D6C4338A}|EConcert.Repository\\EConcert.Repository.csproj|solutionrelative:econcert.repository\\migrations\\20250403224713_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\econcert.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\econcert.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|e:\\finki\\is\\concert\\econcerti.domain\\identity\\econcertapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88614233-71C4-4EF1-B1E1-5E6BB667F853}|EConcerti.Domain\\EConcert.Domain.csproj|solutionrelative:econcerti.domain\\identity\\econcertapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\data\\migrations\\20250403233051_first datab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\data\\migrations\\20250403233051_first datab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|e:\\finki\\is\\concert\\econcert.web\\data\\migrations\\20250403224713_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C22CDC-A7C9-49E4-9E44-C34F4F1B78DB}|EConcert.Web\\EConcert.Web.csproj|solutionrelative:econcert.web\\data\\migrations\\20250403224713_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T22:58:34.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T22:58:33.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T22:28:40.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T22:28:38.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T22:58:31.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Concerts\\Index.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Views\\Concerts\\Index.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Concerts\\Index.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Views\\Concerts\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T22:56:52.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Concerts\\Create.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Views\\Concerts\\Create.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Views\\Concerts\\Create.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Views\\Concerts\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T22:56:48.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConcertsController.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Controllers\\ConcertsController.cs",
+              "RelativeDocumentMoniker": "EConcert.Web\\Controllers\\ConcertsController.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Controllers\\ConcertsController.cs",
+              "RelativeToolTip": "EConcert.Web\\Controllers\\ConcertsController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:32:59.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\ApplicationDbContextFactory.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "EConcert.Repository\\ApplicationDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T19:20:41.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ConcertService.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConecrt.Service\\Implementation\\ConcertService.cs",
+              "RelativeDocumentMoniker": "EConecrt.Service\\Implementation\\ConcertService.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConecrt.Service\\Implementation\\ConcertService.cs",
+              "RelativeToolTip": "EConecrt.Service\\Implementation\\ConcertService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T10:17:57.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITicketService.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConecrt.Service\\Interface\\ITicketService.cs",
+              "RelativeDocumentMoniker": "EConecrt.Service\\Interface\\ITicketService.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConecrt.Service\\Interface\\ITicketService.cs",
+              "RelativeToolTip": "EConecrt.Service\\Interface\\ITicketService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:59:47.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TicketService.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConecrt.Service\\Implementation\\TicketService.cs",
+              "RelativeDocumentMoniker": "EConecrt.Service\\Implementation\\TicketService.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConecrt.Service\\Implementation\\TicketService.cs",
+              "RelativeToolTip": "EConecrt.Service\\Implementation\\TicketService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T10:12:25.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Implementation\\Repository.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Implementation\\Repository.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Implementation\\Repository.cs",
+              "RelativeToolTip": "EConcert.Repository\\Implementation\\Repository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA8wGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:43:34.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Interface\\IRepository.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Interface\\IRepository.cs",
+              "RelativeToolTip": "EConcert.Repository\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T08:58:51.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Program.cs",
+              "RelativeDocumentMoniker": "EConcert.Web\\Program.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Program.cs",
+              "RelativeToolTip": "EConcert.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T21:50:28.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IConcertService.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConecrt.Service\\Interface\\IConcertService.cs",
+              "RelativeDocumentMoniker": "EConecrt.Service\\Interface\\IConcertService.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConecrt.Service\\Interface\\IConcertService.cs",
+              "RelativeToolTip": "EConecrt.Service\\Interface\\IConcertService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T10:00:15.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EConcert.Web\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EConcert.Web\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwCsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T22:27:43.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Concert.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcerti.Domain\\DomainModels\\Concert.cs",
+              "RelativeDocumentMoniker": "EConcerti.Domain\\DomainModels\\Concert.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcerti.Domain\\DomainModels\\Concert.cs",
+              "RelativeToolTip": "EConcerti.Domain\\DomainModels\\Concert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:07:36.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EConcert.Repository\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T19:22:44.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcerti.Domain\\DomainModels\\Ticket.cs",
+              "RelativeDocumentMoniker": "EConcerti.Domain\\DomainModels\\Ticket.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcerti.Domain\\DomainModels\\Ticket.cs",
+              "RelativeToolTip": "EConcerti.Domain\\DomainModels\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:07:55.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConecrt.Service\\Class1.cs",
+              "RelativeDocumentMoniker": "EConecrt.Service\\Class1.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConecrt.Service\\Class1.cs",
+              "RelativeToolTip": "EConecrt.Service\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:47:20.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcerti.Domain\\DomainModels\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "EConcerti.Domain\\DomainModels\\BaseEntity.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcerti.Domain\\DomainModels\\BaseEntity.cs",
+              "RelativeToolTip": "EConcerti.Domain\\DomainModels\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:01:57.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250403233051_First DataB.Designer.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\20250403233051_First DataB.Designer.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Migrations\\20250403233051_First DataB.Designer.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\20250403233051_First DataB.Designer.cs",
+              "RelativeToolTip": "EConcert.Repository\\Migrations\\20250403233051_First DataB.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:00:52.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250403224713_Initial.Designer.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\20250403224713_Initial.Designer.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Migrations\\20250403224713_Initial.Designer.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\20250403224713_Initial.Designer.cs",
+              "RelativeToolTip": "EConcert.Repository\\Migrations\\20250403224713_Initial.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:00:29.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "00000000000000_CreateIdentitySchema.Designer.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
+              "RelativeToolTip": "EConcert.Repository\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:00:21.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-04-07T20:01:03.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EConcert.Repository.csproj",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\EConcert.Repository.csproj",
+              "RelativeDocumentMoniker": "EConcert.Repository\\EConcert.Repository.csproj",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\EConcert.Repository.csproj",
+              "RelativeToolTip": "EConcert.Repository\\EConcert.Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-07T19:59:23.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EConcert.Domain.csproj",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcerti.Domain\\EConcert.Domain.csproj",
+              "RelativeDocumentMoniker": "EConcerti.Domain\\EConcert.Domain.csproj",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcerti.Domain\\EConcert.Domain.csproj",
+              "RelativeToolTip": "EConcerti.Domain\\EConcert.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-07T19:59:17.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "00000000000000_CreateIdentitySchema.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeToolTip": "EConcert.Repository\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:03:30.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20250403233051_First DataB.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\20250403233051_First DataB.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Migrations\\20250403233051_First DataB.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\20250403233051_First DataB.cs",
+              "RelativeToolTip": "EConcert.Repository\\Migrations\\20250403233051_First DataB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:03:22.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250403224713_Initial.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\20250403224713_Initial.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Migrations\\20250403224713_Initial.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\20250403224713_Initial.cs",
+              "RelativeToolTip": "EConcert.Repository\\Migrations\\20250403224713_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:03:18.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "EConcert.Repository\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Repository\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "EConcert.Repository\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T19:42:40.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EConcert.Web.csproj",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\EConcert.Web.csproj",
+              "RelativeDocumentMoniker": "EConcert.Web\\EConcert.Web.csproj",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\EConcert.Web.csproj",
+              "RelativeToolTip": "EConcert.Web\\EConcert.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-07T19:59:29.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20250403233051_First DataB.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Data\\Migrations\\20250403233051_First DataB.cs",
+              "RelativeDocumentMoniker": "EConcert.Web\\Data\\Migrations\\20250403233051_First DataB.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Data\\Migrations\\20250403233051_First DataB.cs",
+              "RelativeToolTip": "EConcert.Web\\Data\\Migrations\\20250403233051_First DataB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:30:51.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EConcertApplicationUser.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcerti.Domain\\Identity\\EConcertApplicationUser.cs",
+              "RelativeDocumentMoniker": "EConcerti.Domain\\Identity\\EConcertApplicationUser.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcerti.Domain\\Identity\\EConcertApplicationUser.cs",
+              "RelativeToolTip": "EConcerti.Domain\\Identity\\EConcertApplicationUser.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAD4vxYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T21:48:51.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "EConcert.Web\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "EConcert.Web\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:17:12.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwCEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T22:54:08.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "EConcert.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "EConcert.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAswH0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:03:52.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "EConcert.Web\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "EConcert.Web\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T22:59:45.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "EConcert.Web\\ScaffoldingReadMe.txt",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "EConcert.Web\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-03T22:53:32.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20250403224713_Initial.cs",
+              "DocumentMoniker": "E:\\finki\\is\\Concert\\EConcert.Web\\Data\\Migrations\\20250403224713_Initial.cs",
+              "RelativeDocumentMoniker": "EConcert.Web\\Data\\Migrations\\20250403224713_Initial.cs",
+              "ToolTip": "E:\\finki\\is\\Concert\\EConcert.Web\\Data\\Migrations\\20250403224713_Initial.cs",
+              "RelativeToolTip": "EConcert.Web\\Data\\Migrations\\20250403224713_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T22:47:13.801Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

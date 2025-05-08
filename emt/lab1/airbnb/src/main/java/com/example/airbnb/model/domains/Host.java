@@ -5,6 +5,7 @@ import lombok.Data;
 
 
 @Entity
+@Table(name = "host")
 public class Host {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

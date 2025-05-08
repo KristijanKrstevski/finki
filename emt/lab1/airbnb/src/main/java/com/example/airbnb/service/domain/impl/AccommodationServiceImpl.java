@@ -1,17 +1,18 @@
 package com.example.airbnb.service.domain.impl;
 
 
-import com.example.airbnb.dto.create.CreateAccommodationDTO;
-import com.example.airbnb.dto.display.DisplayAccommodationDTO;
 import com.example.airbnb.model.domains.Accommodation;
 import com.example.airbnb.model.domains.Host;
 import com.example.airbnb.model.domains.User;
-import com.example.airbnb.model.exceptions.NoAvailableRoomsException;
 import com.example.airbnb.repository.AccommodationRepository;
 import com.example.airbnb.repository.HostRepository;
+import com.example.airbnb.repository.UserRepository;
+import com.example.airbnb.repository.view.AccommodationByHostViewRepository;
 import com.example.airbnb.service.domain.AccommodationService;
+import com.example.airbnb.service.domain.UserService;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,22 +20,36 @@ import java.util.Optional;
 public class AccommodationServiceImpl implements AccommodationService {
     private final AccommodationRepository accommodationRepository;
     private final HostRepository hostRepository;
-
-    public AccommodationServiceImpl(AccommodationRepository accommodationRepository, HostRepository hostRepository) {
+    private final UserService userService;
+    private final UserRepository userRepository;
+    private final AccommodationByHostViewRepository accommodationByHostViewRepository;
+    public AccommodationServiceImpl(AccommodationRepository accommodationRepository, HostRepository hostRepository, UserService userService, UserRepository userRepository, AccommodationByHostViewRepository accommodationByHostViewRepository) {
         this.accommodationRepository = accommodationRepository;
         this.hostRepository = hostRepository;
+        this.userService = userService;
+        this.userRepository = userRepository;
+        this.accommodationByHostViewRepository = accommodationByHostViewRepository;
     }
 
     @Override
     public List<Accommodation> findAll() {
         return this.accommodationRepository.findAll();
     }
+    @Override
+    public Optional<Accommodation> findById(Long id) {
+        return accommodationRepository.findById(id);
+    }
 
     @Override
     public Accommodation create(Accommodation accommodation) throws Exception {
         Host host = this.hostRepository.findById(accommodation.getHost().getId()).orElseThrow(Exception::new);
         Accommodation accommodation1=new Accommodation(accommodation.getName(),accommodation.getCategory(),host,accommodation.getNumRooms());
-        return this.accommodationRepository.save(accommodation1);
+
+
+        //MATHERILZED prvo prbuvame da go zachuvame pa potoa go refreshirame
+        Accommodation savedAccommodation = this.accommodationRepository.save(accommodation1);
+//        this.refreshMaterializedView();
+        return savedAccommodation;
 
     }
 
@@ -43,11 +58,15 @@ public class AccommodationServiceImpl implements AccommodationService {
         Host host= this.hostRepository.findById(accommodation.getHost().getId()).orElseThrow(Exception::new);
         Accommodation accommodation1=this.accommodationRepository.findById(id).orElseThrow(Exception::new);
 
-        accommodation.setName(accommodation.getName());
-        accommodation.setCategory(accommodation.getCategory());
-        accommodation.setHost(host);
-        accommodation.setNumRooms(accommodation.getNumRooms());
-        return accommodationRepository.save(accommodation1);
+        accommodation1.setName(accommodation.getName());
+        accommodation1.setCategory(accommodation.getCategory());
+        accommodation1.setHost(host);
+        accommodation1.setNumRooms(accommodation.getNumRooms());
+
+        //MATHERILZED prvo prbuvame da go zachuvame pa potoa go refreshirame
+        Accommodation updatedAccommodation = this.accommodationRepository.save(accommodation1);
+//        this.refreshMaterializedView();
+        return updatedAccommodation;
     }
 
     @Override
@@ -56,97 +75,78 @@ public class AccommodationServiceImpl implements AccommodationService {
     }
 
     @Override
-    public Accommodation reservation(Long id) throws Exception {
-        Accommodation accommodation=this.accommodationRepository.findById(id).orElseThrow(Exception::new);
+    public void addToTemporarilyList(Long id, String token) {
+        User authUser= userService.getAuthenticatedUser(token);
+        Accommodation accommodation=accommodationRepository.findById(id).orElseThrow();
 
-        if (accommodation.getNumRooms() == 0) {
-            throw new NoAvailableRoomsException(id);
-        }
+        authUser.getAccommodationWishlist().add(accommodation);
+        userRepository.save(authUser);
 
-        accommodation.setNumRooms(accommodation.getNumRooms() - 1);
-        return this.accommodationRepository.save(accommodation);
     }
 
     @Override
-    public Optional<Accommodation> findById(Long id) {
-        return accommodationRepository.findById(id);
+    public void removeFromTemporarilyList(Long id, String token) {
+        User authUser=userService.getAuthenticatedUser(token);
+        Accommodation accommodation=accommodationRepository.findById(id).orElseThrow();
+        authUser.getAccommodationWishlist().remove(accommodation);
+        userRepository.save(authUser);
     }
 
     @Override
-    public boolean rentById(Long id, User user) {
-        return accommodationRepository.findById(id)
-                .filter(acc -> acc.getNumRooms() > 0)
-                .map(acc -> {
-                    acc.setNumRooms(acc.getNumRooms() - 1);
-                    accommodationRepository.save(acc);
-                    user.getRentedAccommodations().add(acc);
-                    return true;
-                })
-                .orElseThrow(() -> new NoAvailableRoomsException(id));
+    public List<Accommodation> findAllFromTemporarilyList( String token) {
+        return userService.getAuthenticatedUser(token).getAccommodationWishlist();
     }
 
     @Override
-    public boolean returnById(Long id, User user) {
-        return accommodationRepository.findById(id)
-                .map(acc -> {
-                    acc.setNumRooms(acc.getNumRooms() + 1);
-                    accommodationRepository.save(acc);
-                    user.getRentedAccommodations().removeIf(a -> a.getId().equals(id));
-                    return true;
-                })
-                .orElseThrow(() -> new RuntimeException("Accommodation not found with id: " + id));
-    }
+    public boolean rentByAccommodationById(Long id, String token) {
+        User authUser=userService.getAuthenticatedUser(token);
+        Accommodation accommodation=accommodationRepository.findById(id).orElseThrow();
+        if(accommodation.getNumRooms()==0)
+        {
+            //throw new NoAvailableRoomsException(id);
+            return false;
 
-    @Override
-    public void addToWishlist(Long id, User user) {
-        for (Accommodation acc : user.getWishlist()) {
-            if (acc.getId().equals(id)) {
-                throw new RuntimeException("Accommodation already in wishlist: " + id);
-            }
         }
+        authUser.getRentedAccommodation().add(accommodation);
+        removeFromTemporarilyList(id,token);
+        accommodation.setNumRooms(accommodation.getNumRooms()-1);
+        accommodationRepository.save(accommodation);
+        userRepository.save(authUser);
 
-        Accommodation acc = accommodationRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Accommodation not found: " + id));
-
-        if (acc.getNumRooms() < 1) {
-            throw new NoAvailableRoomsException(id);
-        }
-
-        user.getWishlist().add(acc);
-    }
-
-    @Override
-    public void removeFromWishlist(Long id, User user) {
-        user.getWishlist().removeIf(acc -> acc.getId().equals(id));
-    }
-
-    @Override
-    public void rentAllFromWishlist(User user) {
-        if (user.getWishlist().isEmpty()) {
-            throw new RuntimeException("Wishlist is empty");
-        }
-
-        if (!areAccommodationsAvailable(user.getWishlist())) {
-            throw new NoAvailableRoomsException(0L);
-        }
-
-        for (Accommodation acc : user.getWishlist()) {
-            rentById(acc.getId(), user);
-        }
-    }
-
-    @Override
-    public List<Accommodation> findAllFromWishlist(User user) {
-        return user.getWishlist();
-    }
-
-    public boolean areAccommodationsAvailable(List<Accommodation> accommodations) {
-        for (Accommodation acc : accommodations) {
-            if (acc.getNumRooms() < 1) {
-                return false;
-            }
-        }
         return true;
+
+    }
+
+    @Override
+    public void rentAllFromTemporarilyList( String token) {
+        User authUser=userService.getAuthenticatedUser(token);
+        //da se proverat dali site accommodations imaat prazni sobi
+        //ako imaat da se izrentaat
+        // od koga kje se izrentaaat da se isprazni listata
+        //da se odzeme po edna soba tamu
+
+        List<Accommodation> accommodationsForRent = new ArrayList<>(authUser.getAccommodationWishlist());
+
+        for(Accommodation accommodation : accommodationsForRent)
+        {
+            if(accommodation.getNumRooms()>0)
+            {
+                accommodation.setNumRooms(accommodation.getNumRooms() - 1);
+                authUser.getRentedAccommodation().add(accommodation);
+                removeFromTemporarilyList(accommodation.getId(),token);
+                accommodationRepository.save(accommodation);
+            }
+            else
+            {
+                continue;
+            }
+        }
+        userRepository.save(authUser);
+    }
+
+    @Override
+    public void refreshMaterializedView() {
+        this.accommodationByHostViewRepository.refreshMaterializedView();
     }
 
 

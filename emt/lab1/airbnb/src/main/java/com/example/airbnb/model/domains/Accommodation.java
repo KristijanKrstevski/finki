@@ -10,6 +10,7 @@ import java.util.List;
 
 
 @Entity
+@Table(name = "accommodation")
 public class Accommodation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +21,7 @@ public class Accommodation {
     @ManyToOne(fetch = FetchType.EAGER)
     private Host host;
     private Integer numRooms;
+//    private boolean isAvailable;
 
 //    @OneToMany
 //    private List<Available> available;

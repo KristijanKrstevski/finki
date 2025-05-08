@@ -3,11 +3,11 @@ package com.example.airbnb.service.application.impl;
 
 import com.example.airbnb.dto.create.CreateAccommodationDTO;
 import com.example.airbnb.dto.display.DisplayAccommodationDTO;
-import com.example.airbnb.dto.display.DisplayHostDTO;
 import com.example.airbnb.model.domains.Accommodation;
 import com.example.airbnb.model.domains.Host;
-import com.example.airbnb.model.exceptions.NoAvailableRoomsException;
+import com.example.airbnb.model.views.AccommodationByHost;
 import com.example.airbnb.repository.HostRepository;
+import com.example.airbnb.repository.view.AccommodationByHostViewRepository;
 import com.example.airbnb.service.application.AccommodationApplicationService;
 
 import com.example.airbnb.service.domain.AccommodationService;
@@ -21,9 +21,11 @@ public class AccommodationApplicationServiceImpl implements AccommodationApplica
     private final AccommodationService accommodationService;
     private final HostRepository hostRepository;
 
-    public AccommodationApplicationServiceImpl(AccommodationService accommodationService, HostRepository hostRepository) {
+    private final AccommodationByHostViewRepository accommodationByHostViewRepository;
+    public AccommodationApplicationServiceImpl(AccommodationService accommodationService, HostRepository hostRepository, AccommodationByHostViewRepository accommodationByHostViewRepository) {
         this.accommodationService = accommodationService;
         this.hostRepository = hostRepository;
+        this.accommodationByHostViewRepository = accommodationByHostViewRepository;
     }
 
     @Override
@@ -63,15 +65,35 @@ public class AccommodationApplicationServiceImpl implements AccommodationApplica
     }
 
     @Override
-    public Accommodation reservation(Long id) throws Exception {
-        Accommodation accommodation=this.accommodationService.findById(id).orElseThrow(Exception::new);
-
-        if (accommodation.getNumRooms() == 0) {
-            throw new NoAvailableRoomsException(id);
-        }
-
-        accommodation.setNumRooms(accommodation.getNumRooms() - 1);
-        return this.accommodationService.create(accommodation);
+    public void addToTemporarilyList(Long id,String token) {
+        accommodationService.addToTemporarilyList(id,token);
     }
+
+    @Override
+    public void removeFromTemporarilyList(Long id,String token) {
+        accommodationService.removeFromTemporarilyList(id,token);
+    }
+
+    @Override
+    public List<DisplayAccommodationDTO> findAllFromTemporarilyList(String token) {
+        return accommodationService.findAllFromTemporarilyList(token).stream()
+                .map(DisplayAccommodationDTO::from).toList();
+    }
+
+    @Override
+    public boolean rentByAccommodationById(Long id,String token) {
+        return accommodationService.rentByAccommodationById(id,token);
+    }
+
+    @Override
+    public void rentAllFromTemporarilyList(String token) {
+        accommodationService.rentAllFromTemporarilyList(token);
+    }
+
+    @Override
+    public List<AccommodationByHost> getAccommodationByHost() {
+        return accommodationByHostViewRepository.findAll();
+    }
+
 
 }

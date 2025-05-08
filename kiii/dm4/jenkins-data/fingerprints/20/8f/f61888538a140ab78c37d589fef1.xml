@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2025-04-01 16:02:00.908 UTC</timestamp>
+  <md5sum>208ff61888538a140ab78c37d589fef1</md5sum>
+  <fileName>Credential id=a14198bf-c1cb-4e9c-ade8-3977d065865f name=KristijanKrstevski/****** (Github Credentials)</fileName>
+  <usages>
+    <entry>
+      <string>Lab04</string>
+      <ranges>1-53</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

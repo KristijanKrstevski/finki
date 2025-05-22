@@ -13,6 +13,7 @@ public class Host {
     private String name;
     private String surname;
     @ManyToOne
+    @JoinColumn(name = "countryId")
     private Country country;
 
     public Host(String name, String surname, Country country) {

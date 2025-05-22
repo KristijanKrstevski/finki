@@ -20,6 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/accommodations")
+
 public class AccommodationController {
 
     private final AccommodationApplicationService accommodationApplicationService;

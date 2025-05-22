@@ -9,14 +9,14 @@ CREATE TABLE host(
             id BIGSERIAL PRIMARY KEY,
             name VARCHAR(250),
             surname VARCHAR(250),
-            countryId begint references country(id) on delete cascade
+            countryId BIGINT references country(id) on delete cascade
 );
 
 CREATE TABLE accommodation(
             id BIGSERIAL PRIMARY KEY,
             name VARCHAR(250),
             category VARCHAR(250),
-            hostId begint references host(id) on delete cascade,
+            hostId BIGINT references host(id) on delete cascade,
             numRooms BIGINT
 --     available???
 );

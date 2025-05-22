@@ -28,4 +28,12 @@ public class HostByCountry {
     public Integer getNumHosts() {
         return numHosts;
     }
+
+    public void setCountryId(Long countryId) {
+        this.countryId = countryId;
+    }
+
+    public void setNumHosts(Integer numHosts) {
+        this.numHosts = numHosts;
+    }
 }

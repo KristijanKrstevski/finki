@@ -21,4 +21,20 @@ public class AccommodationByHost {
 
     @Column(name = "num_accommodations")
     private Integer numAccommodations;
+
+    public Long getHostId() {
+        return hostId;
+    }
+
+    public Integer getNumAccommodations() {
+        return numAccommodations;
+    }
+
+    public void setHostId(Long hostId) {
+        this.hostId = hostId;
+    }
+
+    public void setNumAccommodations(Integer numAccommodations) {
+        this.numAccommodations = numAccommodations;
+    }
 }
